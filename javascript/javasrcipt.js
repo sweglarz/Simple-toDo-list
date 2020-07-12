@@ -1,7 +1,5 @@
 {
-    const tasks = [
-        { content: "jest git", }
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
