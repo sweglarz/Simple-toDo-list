@@ -1,0 +1,10 @@
+.main{
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 10px;
+}
+
+.main__header{
+    font-size: 18px;
+    font-weight: 900;
+}
