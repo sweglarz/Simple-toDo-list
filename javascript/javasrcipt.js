@@ -27,7 +27,7 @@
         for (const task of tasks) {
             taskContent += `
             <li class="section__item js-taskList">
-            <button class="section__button section__button--done js-toggleDone">${task.done ? "✔" : " "}</button>
+            <button class="section__button section__button--done js-toggleDone">${task.done ? "✔" : "X"}</button>
             <span class="section__span ${task.done ? "section__span--done" : ""}"> ${task.content}</span>
             <button class="section__button section__button--remove js-removeButton">🗑️</button>
             </li>`;
