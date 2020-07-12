@@ -18,8 +18,57 @@
 
 .section__item{
     text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc60;
 }
 
-.section__item--done{
+@media (max-width: 767px) {
+    .section__list{
+        margin: 7px;
+        padding: 7px;
+    }
+}
+
+.section__span {
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.section__span--done{
     text-decoration: line-through;
+    color: red;
+}
+
+.section__button{
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .section__button{
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+}
+
+.section__button--done{
+    background-color: #008000;
+    color: #fff;
+}
+
+.section__button--done:hover{
+    background-color: hsl(120, 100%, 30%);
+}
+
+.section__button--remove{
+    background-color: rgb(248, 3, 52);
+}
+
+.section__button--remove:hover{
+    background-color: hsl(348, 98%, 55%);
 }
